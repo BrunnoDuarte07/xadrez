@@ -80,7 +80,7 @@ public class ChessMatch {
 
 		check = (testCheck(opponent(currentPlayer))) ? true : false;
 
-		if (testCheckmate(opponent(currentPlayer))) {
+		if (testCheckMate(opponent(currentPlayer))) {
 			checkMate = true;
 		}
 
@@ -174,7 +174,7 @@ public class ChessMatch {
 		return false;
 	}
 
-	private boolean testCheckmate(Color color) {
+	private boolean testCheckMate(Color color) {
 		if (!testCheck(color)) {
 			return false;
 		}
